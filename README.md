@@ -1,2 +1,2 @@
-# fr_explorer
+# fr-explorer
 Simple in memory UI folder manager
