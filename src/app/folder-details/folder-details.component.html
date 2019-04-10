@@ -1,0 +1,10 @@
+<div *ngIf="folder">
+  <div class="folder-header">
+    <h1 [ngClass]="{'selected': folder.selected}" (click)="folderClicked()">{{folder.name}}</h1>
+  </div>
+  <ul>
+    <li class="child" *ngFor="let c of folder.childs">
+      <app-icon [folder]="c" (onDoubleClick)="folderDoubleClicked(c)"></app-icon>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,7 @@
+.folder-header {
+    border-bottom: 1px solid #CCCCCC;
+}
+.child {
+    display: block;
+    margin-top: .5rem;
+}

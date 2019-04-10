@@ -1,0 +1,6 @@
+<app-address-bar [currentFolder]="currentFolder"></app-address-bar>
+<div class="actions">
+  <button [disabled]="!currentFolder.parent" (click)="goBackToPreviousFolder()" class="btn btn-secondary" [ngClass]="{'disabled': !currentFolder.parent}">Back</button>
+  <button [disabled]="isAddNewFodlerDisabled()" (click)="addNewFolder()" class="btn btn-primary" [ngClass]="{'disabled': isAddNewFodlerDisabled()}">Add New</button>
+</div>
+<app-folder-details [folder]="currentFolder" (openChildFolder)="openChildFolder($event)"></app-folder-details>
