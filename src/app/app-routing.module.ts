@@ -1,10 +1,17 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
+import { RouterModule, Routes } from '@angular/router';
 import { RootComponent } from './root/root.component';
 
 const routes: Routes = [
-  { path: 'root', component: RootComponent }
+  {
+    path: 'root',
+    component: RootComponent
+  },
+  {
+    path: '',
+    redirectTo: '/root',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({
